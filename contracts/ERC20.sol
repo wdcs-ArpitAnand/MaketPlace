@@ -10,7 +10,7 @@ contract Token {
 
     address public owner;
 
-    mapping(address => uint256) balances;
+    mapping(address => uint256) balances; // it will maping user balance
 
     constructor() {
         balances[msg.sender] = totalSupply;
